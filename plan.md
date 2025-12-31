@@ -8,6 +8,20 @@
 
 **Goal:** A simple stock caculator that caculates the best buy zones for a user stock. It will caculate two zones Buy Zone (upper half) and Buy Zone (lower half).
 
+1. Get stock ticket symbol
+
+2. Get current high for stock symbol
+
+3. Find the lowest stock price from the past six months
+
+4. Subtract current high from six months low to get the range.
+
+5. Divided the range to find the difference
+
+6. Subtract current high from difference to get buy zone
+
+7. Return upper and lower buy zones
+
 **OutScope:** The caculator will only caculate base on last six months.Twelve months maybe in future updates.
 
 **Target Users:** Beginner stock traders who don't have stock trader stragery yet.
@@ -16,15 +30,16 @@
 
 **Tech Stack:**
 Frontend: HTML, CSS, JavaScript
+Backend: API
 
 **Timeline & Milestones:**
 
-December 29th - 30th, 2025: Planing stage
+- December 29th - 30th, 2025: Planing stage
 
 **Risks & Challenges:**
 
 Reteriving stock data and making sure it correct and matching.
 
-Finding API to get stock data
+- Picking a API that fit data needs.
 
-Proper caculations for "Buy Zones"
+- Proper caculations for "Buy Zones"
