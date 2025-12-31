@@ -12,10 +12,19 @@
 
 **Target Users:** Beginner stock traders who don't have stock trader stragery yet.
 
-**Core Features:**
+**Core Features:** Caculates "Buy Zones" for stock
 
 **Tech Stack:**
+Frontend: HTML, CSS, JavaScript
 
 **Timeline & Milestones:**
 
+December 29th - 30th, 2025: Planing stage
+
 **Risks & Challenges:**
+
+Reteriving stock data and making sure it correct and matching.
+
+Finding API to get stock data
+
+Proper caculations for "Buy Zones"
