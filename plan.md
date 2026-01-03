@@ -30,7 +30,10 @@
 
 **Tech Stack:**
 Frontend: HTML, CSS, JavaScript
+
 Backend: API
+
+Git + Github
 
 **Timeline & Milestones:**
 
