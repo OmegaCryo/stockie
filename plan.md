@@ -31,7 +31,7 @@
 **Tech Stack:**
 Frontend: HTML, CSS, JavaScript
 
-Backend: API
+Backend: Alpha Vantage
 
 Git + Github
 

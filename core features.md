@@ -59,11 +59,11 @@ Show Error: "Ticker not found. Please try again"
 
 Slight Pull back
 
-`Buy Zone 1 = CH(R x 0.382)`
+`Buy Zone 1 = CH - (R x 0.382)`
 
 Big Pull back
 
-`Buy Zone 2 = CH(R x 0.618)`
+`Buy Zone 2 = CH - (R x 0.618)`
 
 ### Rules
 
