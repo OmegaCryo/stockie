@@ -3,9 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Stock Buy Zone Calculator</title>
   </head>
   <body>
+    <h1>Stock Buy Zone Calculator</h1>
+    <form id="stock-form">
+      <label for="ticker">Ticker Symbol</label><br />
+      <input type="text" id="ticker" placeholder="AAPL" required />
+      <button type="submit">Caculate</button>
+    </form>
+
+    <div class="loading" id="loading" style="display: none">Loading...</div>
+    <div class="error" id="error"></div>
+
+    <div class="results" id="results">
+      <p>Ticker: <span id="result-symbol"></span></p>
+      <p>Current Price: $<span id="result-price"></span></p>
+      <p>Current High: $<span id="result-high"></span></p>
+      <p>6-Month Low: $<span id="result-low"></span></p>
+
+      <hr />
+
+      <p>Buy Zone 1 (Moderate): $<span id="result-zone1"></span></p>
+      <p>Buy Zone 2 (Aggressive): $<span id="result-zone2"></span></p>
+    </div>
     <script src="config.js"></script>
     <script src="app.js"></script>
   </body>

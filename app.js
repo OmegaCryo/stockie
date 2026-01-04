@@ -88,3 +88,41 @@ async function calculateStock(symbol) {
     console.error(error.message);
   }
 }
+
+const form = document.getElementById("stock-form");
+const tickerInput = document.getElementById("ticker");
+const resultsDiv = document.getElementById("results");
+const errorDiv = document.getElementById("error");
+const loadingDiv = document.getElementById("loading");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const symbol = tickerInput.value.trim().toUpperCase();
+  if (!symbol) return;
+
+  errorDiv.textContent = "";
+  resultsDiv.style.display = "none";
+  loadingDiv.style.display = "block";
+
+  try {
+    const data = await calculateStock(symbol);
+
+    if (!data) {
+      throw new Error("Unable to calculate stock data.");
+    }
+
+    document.getElementById("result-symbol").textContent = data.symbol;
+    document.getElementById("result-price").textContent = data.currentPrice;
+    document.getElementById("result-high").textContent = data.currentHigh;
+    document.getElementById("result-low").textContent = data.sixMonthLow;
+    document.getElementById("result-zone1").textContent = data.buyZone1;
+    document.getElementById("result-zone2").textContent = data.buyZone2;
+
+    resultsDiv.style.display = "block";
+  } catch (err) {
+    errorDiv.textContent = err.message;
+  } finally {
+    loadingDiv.style.display = "none";
+  }
+});
